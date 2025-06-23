@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    num1:<br>
+    <input type="number" id="num1"><br>
+    num1:<br>
+    <input type="number" id="num2"><br>
+    operator:
+    <input type="text" id="op"><br>
+    <button type="button" id="btn">Calc</button><br>
+
+    result:
+    <input id="ans">
+
+   
+    
+</body>
+
+<script>
+    var btn=document.getElementById('btn').value;
+   add.addEventListener( "click" function calculate()
+{
+    var num1=document.getElementById('num1').value;
+    var num2=document.getElementById('num2').value;
+    var op=document.getElementById('op');
+})
+
+if(op=="+")
+{
+    ans=num1+num2;
+
+}
+else if(op=="-")
+{
+    ans=num1-num2;
+
+}
+else if(op=="/")
+{
+    ans=num1/num2;
+
+}
+else if(op=="*")
+{
+    ans=num1*num2;
+
+}
+else
+{
+  document.write("Error operator");
+}
+
+
+
+</script>
+</html>

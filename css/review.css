@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading styles */
+h2 {
+    color: black;
+    margin-top: 20px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: grey;
+}
+
+/* Comment styles */
+.comment-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0; display: none;}
+}
+
+/* Button styles */
+#show-comments {
+    padding: 10px 20px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#show-comments:hover {
+    background-color: #1149d7;
+}
+
+/* Hide comments */
+.hide-comments {
+    display: none;
+}
+
+/* Delete button styles */
+.comment-container input[type="submit"] {
+    background-color: grey;
+    width: 140px;
+    height: 30px;
+}
+
+.comment-container input[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+/* Update button styles */
+.comment-container input[type="submit"][name="update_comment"] {
+    background-color: rgb(129, 124, 84);
+}
+
+.comment-container input[type="submit"][name="update_comment"]:hover {
+    background-color: rgb(246, 240, 68);
+}
+
+/* Update input styles */
+.comment-container textarea[name="updated_comment"] {
+    width: calc(100% - 1000px); /* Adjust width to fit within the comment container */
+    margin-right: 10px;
+}
